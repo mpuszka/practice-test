@@ -1,0 +1,84 @@
+.news-module {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    max-width: 1110px;
+    flex-direction: row;
+    font-family: 'Gothic A1';
+    
+    .news-box {
+        width: 100%;
+        max-width: 445px;
+        margin-right: 110px;
+
+        .box-title {
+            font-size: 28px;
+            line-height: 32px;
+            font-weight: bold;
+            margin: 22px 0 35px;
+        }
+
+        .box-item {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: normal;
+        }
+
+        .box-features {
+            width: 100%;
+            max-width: 190px;
+            text-align: center;
+            margin: 57px auto 0;
+
+            .features-title {
+                font-size: 22px;
+                margin: 0 0 18px;
+                font-weight: 500;
+                line-height: 28px;
+            }
+
+            .features {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+    }
+
+    .news-image-wrap {
+        width: 555px;
+        overflow: hidden;
+
+        .news-image-container {
+            width: 100%;
+            padding-bottom: 72%;
+            background-size: cover;
+            transition: all .3s ease;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-image: url('../media/img/cargo-floor.jpg');
+        }
+    }
+
+    &:hover .news-image-container {
+        transform: scale(1.2);
+    }
+
+    @media only screen and (max-width: 1125px) {
+        .news-box {
+            margin-right: 15px;
+        }
+    }
+    
+    @media only screen and (max-width: 1030px) {
+        text-align: center;
+        flex-direction: column;
+
+        .news-box {
+            max-width: 100%;
+        }
+
+        .news-image-wrap {
+            width: 100%;
+        }
+    }
+}
